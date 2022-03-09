@@ -14,7 +14,7 @@ opt.number = true                   -- Включаем нумерацию ст�
 opt.splitright = true               -- vertical split вправо
 opt.splitbelow = true               -- horizontal split вниз
 opt.termguicolors = true      --  24-bit RGB colors
--- cmd'colorscheme onedark'
+cmd'colorscheme rvcs'
 
 
 cmd([[
@@ -36,6 +36,7 @@ autocmd!
 autocmd TextYankPost * silent! lua vim.highlight.on_yank{higroup="IncSearch", timeout=700}
 augroup end
 ]], false)
+
 
 
 
@@ -63,7 +64,5 @@ augroup end
 --     end
 --     server:setup(opts)
 -- end)
-
-
 
 
