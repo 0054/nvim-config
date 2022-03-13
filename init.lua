@@ -3,6 +3,6 @@ require('plugins')
 require('treesitter')
 require('lsp-installer')
 require('_cmp')
-require('settings') 
+require('settings')
 require('keymaps')
 

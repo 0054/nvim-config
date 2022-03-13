@@ -25,4 +25,3 @@ lsp_installer.settings({
     }
 })
 
-

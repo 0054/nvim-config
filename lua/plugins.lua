@@ -32,6 +32,7 @@ packer.init {
 
 return packer.startup(function(use)
   -- My plugins here
+  use 'nvim-lualine/lualine.nvim'
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/plenary.nvim"
   use "windwp/nvim-autopairs"
@@ -60,6 +61,9 @@ return packer.startup(function(use)
   use 'L3MON4D3/LuaSnip'
 
 
+
+  use 'mhinz/vim-startify'
+  use { 'numToStr/Comment.nvim', config = function() require('Comment').setup() end }
 
   -- -- cmp plugins
   -- use "hrsh7th/nvim-cmp" -- The completion plugin
