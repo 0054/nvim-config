@@ -22,6 +22,10 @@ install lsp servers:
 ```
 sudo npm install -g pyright
 ```
+install dependencies:
+```
+sudo apt-get install ripgrep
+```
 install nvim for ubuntu:
 ```
 sudo apt-get install software-properties-common

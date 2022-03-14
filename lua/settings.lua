@@ -42,6 +42,18 @@ vim.opt.termguicolors = true
 vim.opt.list = true
 vim.opt.listchars:append("eol:↴")
 
+-- cmd([[ 
+--     function! DetectAnsible()
+--         for line in getline(1, 1000)
+--             if line =~ '- name:'
+--                 setfiletype yaml.ansible
+--                 break
+--             endif
+--         endfor
+--     endfunction
+--     autocmd au BufRead,BufNewFile * call DetectAnsible()
+--     ]])
+
 require("indent_blankline").setup {
     -- for example, context is off by default, use this to turn it on
     show_trailing_blankline_indent = false,

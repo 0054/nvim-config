@@ -1,3 +1,8 @@
+-- -------------------------------------------------------------------------- --
+--  LSP-INSTALLER
+-- GITHUB https://github.com/williamboman/nvim-lsp-installer
+-- -------------------------------------------------------------------------- --
+
 local lsp_installer = require("nvim-lsp-installer")
 
 -- Register a handler that will be called for each installed server when it's ready (i.e. when installation is finished
@@ -18,10 +23,12 @@ end)
 lsp_installer.settings({
     ui = {
         icons = {
+
             server_installed = "✓",
             server_pending = "➜",
             server_uninstalled = "✗"
         }
     }
 })
+
 
