@@ -14,7 +14,8 @@ opt.number = true                   -- Включаем нумерацию ст�
 opt.splitright = true               -- vertical split вправо
 opt.splitbelow = true               -- horizontal split вниз
 opt.termguicolors = true      --  24-bit RGB colors
-vim.o.signcolumn = 'yes'
+vim.o.signcolumn = 'yes:1'
+vim.opt.mouse = 'a'
 cmd'colorscheme rvcs'
 
 
@@ -38,9 +39,9 @@ autocmd TextYankPost * silent! lua vim.highlight.on_yank{higroup="IncSearch", ti
 augroup end
 ]], false)
 
-vim.opt.termguicolors = true
 vim.opt.list = true
 vim.opt.listchars:append("eol:↴")
+vim.opt.clipboard = 'unnamed,unnamedplus'
 
 -- cmd([[ 
 --     function! DetectAnsible()
@@ -91,4 +92,15 @@ require('lualine').setup {
   tabline = {},
   extensions = {}
 }
+
+
+require'shade'.setup({
+  overlay_opacity = 50,
+  opacity_step = 1,
+  keys = {
+    brightness_up    = '<C-Up>',
+    brightness_down  = '<C-Down>',
+    toggle           = '<Leader>s',
+  }
+})
 

@@ -38,3 +38,7 @@ clone nvim-condig
 ```
 git clone git@github.com:0054/nvim-config.git ~/.config/nvim/
 ```
+
+## Links
+
+- [nvim-awesome](https://github.com/rockerBOO/awesome-neovim)
