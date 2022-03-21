@@ -49,7 +49,7 @@ require('dressing').setup({
       -- can be 'dropdown', 'cursor', or 'ivy'
       -- or you can use a configuration directly:
       -- theme = require('telescope.themes').get_ivy({...})
-      theme = "dropdown",
+      -- theme = "dropdown",
     },
 
     -- Options for fzf selector

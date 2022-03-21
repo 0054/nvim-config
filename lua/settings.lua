@@ -16,7 +16,8 @@ opt.splitbelow = true               -- horizontal split вниз
 opt.termguicolors = true      --  24-bit RGB colors
 vim.o.signcolumn = 'yes:1'
 vim.opt.mouse = 'a'
-cmd'colorscheme rvcs'
+-- cmd'colorscheme rvcs'
+cmd'colorscheme gruvbox'
 
 
 cmd([[
@@ -28,6 +29,10 @@ opt.shiftwidth = 4        -- shift 4 spaces when tab
 opt.tabstop = 4           -- 1 tab == 4 spaces
 opt.smartindent = true    -- autoindent new lines
 cmd [[au BufEnter * set fo-=c fo-=r fo-=o]]
+
+cmd [[
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+]]
 
 cmd [[
 autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
