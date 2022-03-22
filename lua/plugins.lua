@@ -52,6 +52,8 @@ return packer.startup(function(use)
     use "projekt0n/github-nvim-theme"
 
     use "nvim-telescope/telescope.nvim"
+    use "nvim-telescope/telescope-file-browser.nvim"
+    use "nvim-telescope/telescope-project.nvim"
     use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate", }
     use "lukas-reineke/indent-blankline.nvim"
 
