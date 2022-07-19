@@ -63,13 +63,13 @@ cmp.setup {
         end,
     },
 
-    window = {
-        completion = {border = {"╭", "─", "╮", "│", "╯", "─", "╰", "│"}, scrollbar = "║"},
-        documentation = {
-            border = {"╭", "─", "╮", "│", "╯", "─", "╰", "│"},
-            scrollbar = "║"
-        },
-    },
+    -- window = {
+    --     completion = {border = {"╭", "─", "╮", "│", "╯", "─", "╰", "│"}, scrollbar = "║"},
+    --     documentation = {
+    --         border = {"╭", "─", "╮", "│", "╯", "─", "╰", "│"},
+    --         scrollbar = "║"
+    --     },
+    -- },
 
     mapping = {
         ["<C-k>"] = cmp.mapping.select_prev_item(),
@@ -118,9 +118,9 @@ cmp.setup {
         behavior = cmp.ConfirmBehavior.Replace,
         select = false,
     },
-    documentation = {
-        border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
-    },
+    -- documentation = {
+    --     border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+    -- },
     experimental = {
         ghost_text = false,
         native_menu = false,

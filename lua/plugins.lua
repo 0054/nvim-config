@@ -41,6 +41,7 @@ return packer.startup(function(use)
     use "kyazdani42/nvim-web-devicons"
     use { "kyazdani42/nvim-tree.lua", config = function() require'nvim-tree'.setup {} end, }
 
+    use 'tpope/vim-fugitive'
     use 'stevearc/dressing.nvim'
     use "folke/twilight.nvim"
     use "sunjon/shade.nvim"
@@ -48,14 +49,17 @@ return packer.startup(function(use)
     use 'tanvirtin/monokai.nvim'
     use 'shaunsingh/nord.nvim'
     use 'ellisonleao/gruvbox.nvim'
-    use 'sainnhe/gruvbox-material'
-    use "projekt0n/github-nvim-theme"
+    use 'NLKNguyen/papercolor-theme'
+    -- use 'sainnhe/gruvbox-material'
+    -- use "projekt0n/github-nvim-theme"
 
+    use "romgrk/barbar.nvim" -- улучшенные табы
     use "nvim-telescope/telescope.nvim"
     use "nvim-telescope/telescope-file-browser.nvim"
     use "nvim-telescope/telescope-project.nvim"
     use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate", }
     use "lukas-reineke/indent-blankline.nvim"
+
 
     -- LSP
     use "neovim/nvim-lspconfig" -- enable LSP
