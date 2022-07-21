@@ -12,6 +12,7 @@ map('v', 'S-Y', '"+y', {})
 -- Move to previous/next
 map('n', '<A-h>', '<Cmd>BufferPrevious<CR>', default_opts)
 map('n', '<A-l>', '<Cmd>BufferNext<CR>', default_opts)
+map('n', '<A-c>', '<Cmd>BufferClose<CR>', default_opts)
 -- map('n', '<Space>bb', '<Cmd>BufferOrderByBufferNumber<CR>', default_opts)
 -- map('n', '<Space>bd', '<Cmd>BufferOrderByDirectory<CR>', default_opts)
 -- map('n', '<Space>bl', '<Cmd>BufferOrderByLanguage<CR>', default_opts)
