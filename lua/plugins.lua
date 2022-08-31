@@ -53,7 +53,7 @@ return packer.startup(function(use)
     -- use 'sainnhe/gruvbox-material'
     -- use "projekt0n/github-nvim-theme"
 
-    use "romgrk/barbar.nvim" -- улучшенные табы
+    -- use "romgrk/barbar.nvim" -- улучшенные табы
     use "nvim-telescope/telescope.nvim"
     use "nvim-telescope/telescope-file-browser.nvim"
     use "nvim-telescope/telescope-project.nvim"
@@ -80,15 +80,6 @@ return packer.startup(function(use)
 
     use 'mhinz/vim-startify'
     use { 'numToStr/Comment.nvim', config = function() require('Comment').setup() end }
-
-    -- -- cmp plugins
-    -- use "hrsh7th/nvim-cmp" -- The completion plugin
-    -- use "hrsh7th/cmp-buffer" -- buffer completions
-    -- use "hrsh7th/cmp-path" -- path completions
-    -- use "saadparwaiz1/cmp_luasnip" -- snippet completions
-    -- use "hrsh7th/cmp-nvim-lsp"
-
-
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
