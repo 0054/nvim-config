@@ -33,7 +33,8 @@ return require('packer').startup(function(use)
     use 'tanvirtin/monokai.nvim'
     use 'shaunsingh/nord.nvim'
     use 'ellisonleao/gruvbox.nvim'
-    use 'NLKNguyen/papercolor-theme'
+    -- use 'NLKNguyen/papercolor-theme'
+    use "EdenEast/nightfox.nvim" -- Packer
     -- use 'sainnhe/gruvbox-material'
     -- use "projekt0n/github-nvim-theme"
 
@@ -51,10 +52,10 @@ return require('packer').startup(function(use)
     -- LSP
     use "williamboman/mason.nvim" -- package manager for Neovim to install and manage LSP servers, DAP servers, linters, and formatters
     use "williamboman/mason-lspconfig.nvim" -- lsp manager
+    use "neovim/nvim-lspconfig" -- enable LSP  управляется через mason-lspconfig
     use 'mfussenegger/nvim-dap' -- dap manager
     use 'mfussenegger/nvim-lint' -- linter and formatter manager 
 
-    -- use "neovim/nvim-lspconfig" -- enable LSP
     -- use "jose-elias-alvarez/null-ls.nvim"
 
     -- use "williamboman/nvim-lsp-installer" -- simple to use language server installer
