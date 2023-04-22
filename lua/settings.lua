@@ -38,6 +38,10 @@ opt.smartindent = true    -- autoindent new lines
 cmd [[au BufEnter * set fo-=c fo-=r fo-=o]]
 
 cmd [[
+autocmd FileType terraform setlocal ts=2 sts=2 sw=2
+]]
+
+cmd [[
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab indentkeys-=<:>
 ]]
 

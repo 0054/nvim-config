@@ -27,7 +27,6 @@ return require('packer').startup(function(use)
     use "nvim-lua/popup.nvim" -- библиотека Popup API from vim in Neovim
     use 'stevearc/dressing.nvim' -- lib for pretty interface
 
-
     -- colorschemes
     use "shaeinst/roshnivim-cs" 
     use 'tanvirtin/monokai.nvim'
